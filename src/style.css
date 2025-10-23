@@ -1,3 +1,19 @@
+:root {
+  --white-pure: #ffffff;
+  --grey-50: #f9fafb;
+  --grey-100: #f3f4f6;
+  --grey-200: #e5e7eb;
+  --grey-400: #9ca3af;
+  --grey-600: #4b5563;
+  --grey-800: #1f2937;
+  --sky-500: #0ea5e9;
+  --sky-800: #075985;
+  --ocean-100: #dbeafe;
+  --ocean-200: #bfdbfe;
+  --sunrise-300: #fdba74;
+  --grass-x: #90c695;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,22 +24,22 @@ html, body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #app {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
 }
 
-.shell-map {
-  width: 100%;
-  height: 100%;
-}
+/* SVG dentro do mapa */
 .shell-map svg {
   width: 100%;
   height: 100%;
-  preserveAspectRatio: xMidYMid meet;
+  object-fit: contain;
 }
